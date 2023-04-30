@@ -11,6 +11,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
     SidebarComponent,
     BreadcrumbsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, APP_ROUTE],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, APP_ROUTE],
   providers: [],
   bootstrap: [AppComponent],
 })
