@@ -4,8 +4,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'converter', component: DashboardComponent },
+  { path: '', redirectTo: '/converter', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent },
 ];
 
