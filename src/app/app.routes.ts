@@ -1,11 +1,14 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+
+import { EncodeComponent } from './pages/encode/encode.component';
+import { DecodeComponent } from './pages/decode/decode.component';
 
 const routes: Routes = [
-  { path: 'converter', component: DashboardComponent },
-  { path: '', redirectTo: '/converter', pathMatch: 'full' },
+  { path: 'encode', component: EncodeComponent },
+  { path: 'decode', component: DecodeComponent },
+  { path: '', redirectTo: '/encode', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent },
 ];
 

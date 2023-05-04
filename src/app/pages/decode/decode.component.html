@@ -1,0 +1,57 @@
+<div class="card">
+  <div class="card-body">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Type the text you want to decode"
+        aria-label="Type the text you want to decode"
+        aria-describedby="button-addon2"
+        [(ngModel)]="textToConvert"
+      />
+      <button
+        class="btn btn-outline-primary"
+        type="button"
+        id="button-addon2"
+        (click)="decodeBase64ToText()"
+      >
+        Decode
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <label>Base64</label>
+    <div class="form-floating">
+      <textarea class="form-control" disabled readonly>{{
+        textDecoded
+      }}</textarea>
+    </div>
+
+    <div
+      class="btn-group d-grid gap-2 d-md-flex justify-content-md-end"
+      role="group"
+      aria-label="Basic outlined example"
+    >
+      <button
+        class="btn btn-outline-primary"
+        (click)="clear()"
+        value="click to copy"
+        type="button"
+      >
+        Clear
+      </button>
+      <button
+        class="btn btn-outline-primary"
+        (click)="copyText()"
+        value="click to copy"
+        type="button"
+      >
+        Copy
+      </button>
+    </div>
+    <!-- <ion-icon name="copy-outline"></ion-icon> -->
+  </div>
+</div>
