@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class BreadcrumbsComponent {
   @Input()
-  pageTitle: string = 'Blanck page';
+  pageTitle: string = 'Convert';
 
   @Input()
-  breadcrumbPageTitle!: string;
+  breadcrumbPageTitle: string = 'Convert';
 }
