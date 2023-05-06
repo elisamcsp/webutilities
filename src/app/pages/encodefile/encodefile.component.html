@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-body">
-    <div class="form-group">
-      <label>Select File to encode</label>
+    <div class="m-b-10">
+      <label>Select file to encode</label>
       <div
         class="fileinput fileinput-new input-group"
         data-provides="fileinput"
@@ -10,29 +10,23 @@
           <i class="fa fa-file fileinput-exists"></i>
           <span class="fileinput-filename"></span>
         </div>
-        <span class="input-group-addon btn btn-secondary btn-file">
-          <span class="fileinput-new">Select file</span>
+        <span class="input-group-addon btn btn-outline-primary btn-file">
+          <span class="fileinput-new">Browse</span>
           <span class="fileinput-exists">Change</span>
           <input type="file" name="..." />
         </span>
         <a
           href="#"
-          class="input-group-addon btn btn-secondary fileinput-exists"
+          class="input-group-addon btn btn-outline-primary fileinput-exists"
           data-dismiss="fileinput"
           >Remove</a
         >
       </div>
     </div>
-
-    <div
-      class="btn-group d-grid gap-2 d-md-flex justify-content-md-end"
-      role="group"
-      aria-label="Basic outlined example"
-    >
+    <div class="btn-group d-grid gap-2 d-md-flex justify-content-md-end">
       <button
         class="btn btn-outline-primary"
         type="button"
-        id="button-addon2"
         (click)="encodeToBase64()"
       >
         Encode
