@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-decode',
-  templateUrl: './decode.component.html',
+  selector: 'app-encodefile',
+  templateUrl: './encodefile.component.html',
 })
-export class DecodeComponent {
+export class EncodefileComponent {
   textToConvert: string = '';
-  textDecoded: string = '';
+  textConverted: string = '';
 
-  decodeBase64ToText() {
-    this.textDecoded = atob(this.textToConvert);
-    console.log(this.textDecoded);
+  encodeToBase64() {
+    this.textConverted = btoa(this.textToConvert);
+    console.log(this.textConverted);
   }
 
   clear() {
-    this.textDecoded = '';
+    this.textConverted = '';
   }
 
   copyText() {
@@ -23,7 +23,7 @@ export class DecodeComponent {
     selBox.style.left = '0';
     selBox.style.top = '0';
     selBox.style.opacity = '0';
-    selBox.value = this.textDecoded;
+    selBox.value = this.textConverted;
     document.body.appendChild(selBox);
     selBox.focus();
     selBox.select();

@@ -19,6 +19,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 
 import { FormsModule } from '@angular/forms';
+import { EncodefileComponent } from './pages/encodefile/encodefile.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     BreadcrumbsComponent,
     EncodeComponent,
     DecodeComponent,
+    EncodefileComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, APP_ROUTE],
   providers: [],

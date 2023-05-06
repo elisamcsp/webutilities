@@ -17,6 +17,10 @@ export class SidebarService {
           title: 'Decode Base64 to text',
           url: '/decode',
         },
+        {
+          title: 'Encode file to Base64',
+          url: '/encodefile',
+        },
       ],
     },
   ];
