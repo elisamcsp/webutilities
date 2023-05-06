@@ -9,7 +9,7 @@ export class DashboardComponent {
   textToConvert: string = '';
   textConverted: string = '';
 
-  convertToBase64() {
+  encodeToBase64() {
     this.textConverted = btoa(this.textToConvert);
     console.log(this.textConverted);
   }

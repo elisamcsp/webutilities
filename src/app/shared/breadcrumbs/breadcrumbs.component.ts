@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-breadcrumbs',
   templateUrl: './breadcrumbs.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class BreadcrumbsComponent {
+  @Input()
+  pageTitle: string = 'Convert';
 
+  @Input()
+  breadcrumbPageTitle: string = 'Convert';
 }

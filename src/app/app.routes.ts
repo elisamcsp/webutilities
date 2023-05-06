@@ -1,11 +1,16 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+
+import { EncodeComponent } from './pages/encode/encode.component';
+import { DecodeComponent } from './pages/decode/decode.component';
+import { EncodefileComponent } from './pages/encodefile/encodefile.component';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'encode', component: EncodeComponent },
+  { path: 'decode', component: DecodeComponent },
+  { path: 'encodefile', component: EncodefileComponent },
+  { path: '', redirectTo: '/encode', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent },
 ];
 

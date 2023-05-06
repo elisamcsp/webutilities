@@ -4,8 +4,8 @@
       <input
         type="text"
         class="form-control"
-        placeholder="Type the text you want to convert"
-        aria-label="Type the text you want to convert"
+        placeholder="Type the text you want to encode"
+        aria-label="Type the text you want to encode"
         aria-describedby="button-addon2"
         [(ngModel)]="textToConvert"
       />
@@ -13,9 +13,9 @@
         class="btn btn-outline-primary"
         type="button"
         id="button-addon2"
-        (click)="convertToBase64()"
+        (click)="encodeToBase64()"
       >
-        Convert
+        Encode
       </button>
     </div>
   </div>
@@ -23,7 +23,7 @@
 
 <div class="card">
   <div class="card-body">
-    <label>Converted text</label>
+    <label>Base64</label>
     <div class="form-floating">
       <textarea class="form-control" disabled readonly>{{
         textConverted
